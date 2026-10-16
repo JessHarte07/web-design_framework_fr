@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+--font-display: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+--font-sans:
+"Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+--color-paper: #f0eee3;
+--color-ink: #16220e;
+--color-link: #0b5c2a;
+--color-ink-deep: #16220e;
+--color-on-dark: #f0eee3;
+
+--text-display: clamp(2.5rem, 1.6rem + 4vw, 5rem);
+}
+
+:root {
+--rule: 1.5px;
+}

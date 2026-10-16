@@ -1,0 +1,429 @@
+
+<!doctype html>
+<html lang="en-IE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      Week 03 starter — Compass header/nav, support cells &amp; filters
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+
+  <body class="bg-paper font-sans text-ink">
+
+    <!-- HEADER AND NAVIGATION -->
+    <header class="border-b-(length:--rule) border-ink">
+      <div
+        class="mx-auto flex max-w-5xl flex-wrap items-center gap-x-8 gap-y-4 px-5 py-6"
+      >
+        <!-- Compass brand -->
+        <a
+          href="index.html"
+          class="flex items-center gap-3 font-display text-2xl font-black text-ink no-underline"
+        >
+          <span
+            class="h-3 w-3 rounded-full bg-green"
+            aria-hidden="true"
+          ></span>
+          Compass
+        </a>
+
+        <!-- Main navigation -->
+        <nav
+          aria-label="Primary"
+          class="flex flex-wrap items-center gap-x-4 gap-y-2"
+        >
+          <a
+            href="index.html"
+            aria-current="page"
+            class="font-display font-bold text-ink underline underline-offset-4"
+          >
+            Home
+          </a>
+
+          <a
+            href="find-support-services.html"
+            class="font-display font-bold text-ink no-underline"
+          >
+            Find support services
+          </a>
+
+          <a
+            href="student-stories.html"
+            class="font-display font-bold text-ink no-underline"
+          >
+            Student stories
+          </a>
+
+          <a
+            href="accommodations-faq.html"
+            class="font-display font-bold text-ink no-underline"
+          >
+            Accommodations FAQ
+          </a>
+
+          <a
+            href="events.html"
+            class="font-display font-bold text-ink no-underline"
+          >
+            Events &amp; drop-ins
+          </a>
+        </nav>
+
+        <!-- Call to action pushed to the right -->
+        <a
+          href="request-support.html"
+          class="ml-auto font-display font-extrabold text-link no-underline"
+        >
+          Request support
+        </a>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-5">
+
+      <!-- SUPPORT CELLS -->
+      <section aria-label="Types of support" class="py-8">
+        <ul
+          class="flex flex-wrap list-none border-t-(length:--rule) border-ink pl-0"
+        >
+          <!-- Study skills -->
+          <li
+            class="flex min-w-0 flex-1 basis-48 flex-col items-center justify-center gap-4 border-b-(length:--rule) border-ink bg-lime p-8 text-center text-on-light"
+          >
+            <svg
+              class="h-14 w-14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 5.5C4 4.67 4.67 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z"
+              />
+              <path
+                d="M20 5.5c0-.83-.67-1.5-1.5-1.5H13v16h5.5c.83 0 1.5-.67 1.5-1.5v-13Z"
+              />
+            </svg>
+
+            <span class="font-display text-lg font-bold">
+              Study skills
+            </span>
+          </li>
+
+          <!-- Assistive technology -->
+          <li
+            class="flex min-w-0 flex-1 basis-48 flex-col items-center justify-center gap-4 border-b-(length:--rule) border-ink bg-ink-deep p-8 text-center text-on-dark"
+          >
+            <svg
+              class="h-14 w-14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 13v-1a8 8 0 0 1 16 0v1" />
+              <rect x="3" y="13" width="4" height="7" rx="1.5" />
+              <rect x="17" y="13" width="4" height="7" rx="1.5" />
+            </svg>
+
+            <span class="font-display text-lg font-bold">
+              Assistive technology
+            </span>
+          </li>
+
+          <!-- Wellbeing -->
+          <li
+            class="flex min-w-0 flex-1 basis-48 flex-col items-center justify-center gap-4 border-b-(length:--rule) border-ink bg-green p-8 text-center text-on-light"
+          >
+            <svg
+              class="h-14 w-14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 20.5s-7.5-4.6-9.8-9.2C.6 7.8 2.4 4.5 6 4.2c2-.2 3.7.9 6 3.2 2.3-2.3 4-3.4 6-3.2 3.6.3 5.4 3.6 3.8 7.1C19.5 15.9 12 20.5 12 20.5Z"
+              />
+            </svg>
+
+            <span class="font-display text-lg font-bold">
+              Wellbeing
+            </span>
+          </li>
+
+          <!-- Social and peer -->
+          <li
+            class="flex min-w-0 flex-1 basis-48 flex-col items-center justify-center gap-4 border-b-(length:--rule) border-ink bg-pink p-8 text-center text-on-light"
+          >
+            <svg
+              class="h-14 w-14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="8.5" cy="8" r="3" />
+              <path d="M2.5 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
+              <circle cx="17" cy="9" r="2.5" />
+              <path d="M15.5 14.2c2.9.4 5 2.9 5 5.8" />
+            </svg>
+
+            <span class="font-display text-lg font-bold">
+              Social &amp; peer
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- FILTERS -->
+      <form
+        aria-labelledby="filter-heading"
+        method="get"
+        action="#"
+        class="py-8"
+      >
+        <h2
+          id="filter-heading"
+          class="mb-6 font-display text-2xl font-extrabold text-link"
+        >
+          Filter services
+        </h2>
+
+        <div class="flex flex-wrap gap-6">
+
+          <!-- CATEGORY FILTER -->
+          <fieldset
+            class="min-w-0 flex-1 basis-64 border-t-4 border-lime p-4"
+          >
+            <legend
+              class="rounded-full bg-lime px-4 py-2 font-display font-bold text-on-light"
+            >
+              Category
+            </legend>
+
+            <div class="flex flex-wrap gap-2">
+              <label
+                class="inline-flex items-center gap-2 rounded-full border-(length:--rule) border-ink px-3 py-2"
+              >
+                <input
+                  type="checkbox"
+                  name="category"
+                  value="study-skills"
+                />
+                Study skills
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 rounded-full border-(length:--rule) border-ink px-3 py-2"
+              >
+                <input
+                  type="checkbox"
+                  name="category"
+                  value="assistive-tech"
+                />
+                Assistive technology
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 rounded-full border-(length:--rule) border-ink px-3 py-2"
+              >
+                <input
+                  type="checkbox"
+                  name="category"
+                  value="wellbeing"
+                />
+                Wellbeing
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 rounded-full border-(length:--rule) border-ink px-3 py-2"
+              >
+                <input
+                  type="checkbox"
+                  name="category"
+                  value="financial"
+                />
+                Financial
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 rounded-full border-(length:--rule) border-ink px-3 py-2"
+              >
+                <input
+                  type="checkbox"
+                  name="category"
+                  value="social"
+                />
+                Social &amp; peer
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- FORMAT FILTER -->
+          <fieldset
+            class="min-w-0 flex-1 basis-64 border-t-4 border-green p-4"
+          >
+            <legend
+              class="rounded-full bg-green px-4 py-2 font-display font-bold text-on-light"
+            >
+              Format
+            </legend>
+
+            <div class="flex flex-wrap gap-2">
+              <label
+                class="inline-flex items-center gap-2 rounded-full border-(length:--rule) border-ink px-3 py-2"
+              >
+                <input
+                  type="checkbox"
+                  name="format"
+                  value="in-person"
+                />
+                In person
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 rounded-full border-(length:--rule) border-ink px-3 py-2"
+              >
+                <input
+                  type="checkbox"
+                  name="format"
+                  value="online"
+                />
+                Online
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 rounded-full border-(length:--rule) border-ink px-3 py-2"
+              >
+                <input
+                  type="checkbox"
+                  name="format"
+                  value="email"
+                />
+                Email
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- CAMPUS FILTER -->
+          <fieldset
+            class="min-w-0 flex-1 basis-64 border-t-4 border-pink p-4"
+          >
+            <legend
+              class="rounded-full bg-pink px-4 py-2 font-display font-bold text-on-light"
+            >
+              Campus
+            </legend>
+
+            <div class="flex flex-wrap gap-2">
+              <label
+                class="inline-flex items-center gap-2 rounded-full border-(length:--rule) border-ink px-3 py-2"
+              >
+                <input
+                  type="checkbox"
+                  name="campus"
+                  value="city"
+                />
+                City
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 rounded-full border-(length:--rule) border-ink px-3 py-2"
+              >
+                <input
+                  type="checkbox"
+                  name="campus"
+                  value="riverside"
+                />
+                Riverside
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 rounded-full border-(length:--rule) border-ink px-3 py-2"
+              >
+                <input
+                  type="checkbox"
+                  name="campus"
+                  value="online-only"
+                />
+                Online only
+              </label>
+            </div>
+          </fieldset>
+
+        </div>
+      </form>
+    </main>
+
+    <!-- FOOTER NAVIGATION -->
+    <footer class="border-t-(length:--rule) border-ink px-5 py-8">
+      <nav aria-label="Footer">
+        <ul
+          class="mx-auto flex max-w-5xl flex-wrap list-none gap-x-6 gap-y-3 pl-0"
+        >
+          <li>
+            <a
+              href="find-support-services.html"
+              class="font-display font-bold text-link underline"
+            >
+              Find support services
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="accommodations-faq.html"
+              class="font-display font-bold text-link underline"
+            >
+              Accommodations FAQ
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="events.html"
+              class="font-display font-bold text-link underline"
+            >
+              Events &amp; drop-ins
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="request-support.html"
+              class="font-display font-bold text-link underline"
+            >
+              Request support
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+  </body>
+</html>
